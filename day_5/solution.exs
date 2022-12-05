@@ -17,7 +17,7 @@ defmodule Day5 do
         pos = key*4+1 # compute letter position from the key (stack index)
         case String.at(line, pos) do
           " "  -> acc # space, no letter, don't add anything to the Map
-          char -> acc |> Map.update(key, [char], fn stack -> stack ++ [ char ] end) # found a letter, prepend it in the stack
+          char -> acc |> Map.update(key, [char], fn stack -> stack ++ [ char ] end) # found a letter, append it in the stack
         end
       end)
     end)
