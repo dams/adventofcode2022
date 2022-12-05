@@ -4,7 +4,7 @@ defmodule Day5 do
     # split the input in the lines for the initial state, and the moves
     [state_str, moves_str] = File.read!("input") |> String.split("\n\n", trim: true)
 
-    # split the lines for the initial state stacks, drop the last two
+    # split the lines for the initial state stacks, drop the last one
     state_lines = state_str |> String.split("\n") |> Enum.drop(-1)
 
     # compute how many stacks we have (divide length of one line by 4)
