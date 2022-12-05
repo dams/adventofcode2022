@@ -35,5 +35,5 @@ defmodule Day5 do
   end
 end
 
-Day5.run(&Enum.reverse/1)
-Day5.run(& &1)
+Day5.run(&Enum.reverse/1) # part 1, reverse when moving over
+Day5.run(& &1)            # part 2, don't reverse
